@@ -1,0 +1,33 @@
+/* ========= */
+/* RESET CSS */
+/* ========= */
+
+html {
+  /* Set box-sizing to border box for whole app */
+  box-sizing: border-box;
+
+  /* 1rem = 10px, this also sets the font-size of the html element to be 10px */
+  font-size: 62.5%;
+}
+
+body {
+  /* Reset body font size back to 16px (in terms of rem) */
+  font-size: 1.6rem;
+
+  /* Set minimum height of body to be the height of the viewport */
+  min-height: 100vh;
+
+  /* Set min width of body to be the width of the parent (don't include the scroll bar if applicable) */
+  min-width: 100%;
+}
+
+*,
+*::before,
+*::after {
+  /* Allow box-sizing to be inherited */
+  box-sizing: inherit;
+
+  /* Reset margin and padding */
+  padding: 0;
+  margin: 0;
+}

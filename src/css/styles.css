@@ -1,0 +1,110 @@
+/* ========= */
+/* VARIABLES */
+/* ========= */
+
+:root {
+  --color-primary: #2b2e4a;
+  --color-secondary: #e84545;
+  --color-tertiary: #903749;
+  --color-quartinary: #53354a;
+}
+
+/* ===== */
+/*  APP  */
+/* ===== */
+body {
+  font-size: 2.4rem;
+
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+
+  /* Create a flex container to align the app container */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app {
+  /* Set a Width to the app based on the parent container */
+  width: 75%;
+
+  /* Create a flex container to center the contents within the app wrapper*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ====== */
+/* HEADER */
+/* ====== */
+.header {
+  margin-bottom: 2rem;
+}
+
+.header__heading {
+  text-transform: uppercase;
+}
+
+/* ------- */
+/* Heading */
+/* ------- */
+
+/* ==== */
+/* MAIN */
+/* ==== */
+.wrapper {
+  margin: 2rem 0;
+}
+
+/* ----- */
+/* Input */
+/* ----- */
+
+.input {
+  text-align: center;
+}
+
+.input__text,
+.input__input {
+  margin: 1rem 0;
+}
+
+/* Instructions */
+
+/* Search */
+.input__input {
+  font-size: 2rem;
+  width: 100%;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  text-align: center;
+  border: 0;
+  background-color: var(--color-quartinary);
+  color: white;
+  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+}
+
+.input__input:focus {
+  outline: none;
+  border: 0.3rem var(--color-tertiary) solid;
+}
+
+/* ====== */
+/* Output */
+/* ====== */
+
+.output__countries {
+  text-align: center;
+  height: 60rem;
+  overflow-y: auto;
+  margin-top: 2rem;
+}
+
+.output__country {
+  width: 50%;
+  margin: 1rem auto;
+  padding: 1rem;
+  border-radius: 2rem;
+  background-color: var(--color-quartinary);
+}
