@@ -39,7 +39,7 @@ body {
 /* HEADER */
 /* ====== */
 .header {
-  margin-bottom: 2rem;
+  margin: 2rem;
 }
 
 .header__heading {
