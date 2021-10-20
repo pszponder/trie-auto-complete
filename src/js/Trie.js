@@ -179,7 +179,7 @@ export default class Trie {
    */
   autoComplete(str) {
     // EDGE CASE: If str is empty, return
-    if (str === "") return "Please enter a valid string";
+    if (str === "") return -1;
 
     // Extract all the words in the Trie using the getAllWords method
     const allWords = this.getAllWords();
